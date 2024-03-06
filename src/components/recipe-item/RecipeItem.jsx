@@ -1,11 +1,11 @@
-import { useSelector } from "react-redux";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart } from "@fortawesome/free-regular-svg-icons";
 import { faHeart as faSolid } from "@fortawesome/free-solid-svg-icons";
 import { useActions } from "../../hooks/useActions";
+import { useFavorites } from "../../hooks/useFavorites";
 
 const RecipeItem = ({ recipe }) => {
-	const { favorites } = useSelector((state) => state);
+	const { favorites } = useFavorites()
 
 	const { toggleFavorite } = useActions();
 
