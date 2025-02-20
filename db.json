@@ -1,0 +1,24 @@
+{
+	"recipes": [
+		{
+			"id": 1,
+			"name": "Garides Saganaki",
+			"image": "https://www.themealdb.com/images/media/meals/wuvryu1468232995.jpg"
+		},
+		{
+			"id": 2,
+			"name": "Grilled Mac and Cheese Sandwich",
+			"image": "https://www.themealdb.com/images/media/meals/xutquv1505330523.jpg"
+		},
+		{
+			"id": 3,
+			"name": "General Tso's Chicken",
+			"image": "https://www.themealdb.com/images/media/meals/1529444113.jpg"
+		},
+		{
+			"id": 4,
+			"name": "Gigantes Plaki",
+			"image": "https://www.themealdb.com/images/media/meals/b79r6f1585566277.jpg"
+		}
+	]
+}
