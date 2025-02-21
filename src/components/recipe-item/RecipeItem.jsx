@@ -11,11 +11,9 @@ const RecipeItem = ({ recipe }) => {
 
 	const isExists = favorites.some((r) => r.id === recipe.id);
 
-	console.log(favorites);
-
 	return (
-		<div className="flex flex-col items-center bg-[#97BC62] w-full p-6 m-5 border border-none rounded-xl">
-			<img src={recipe.image} alt={recipe.name} className="mb-4" />
+		<div className="flex flex-col items-center bg-[#97BC62] w-full p-6 border border-none rounded-xl">
+			<img src={recipe.image} alt={recipe.name} className="mb-4 rounded-lg" />
 			<div className="flex justify-center items-center gap-3">
 				<h2 className="font-medium text-xl text-[#2C5F2D]">
 					{recipe.name}
@@ -26,14 +24,16 @@ const RecipeItem = ({ recipe }) => {
 						icon={faSolid}
 						size="xl"
 						style={{ color: "#c4501b" }}
+						className="cursor-pointer"
 						onClick={() => toggleFavorite(recipe)}
 					/>
 				) : (
 					<FontAwesomeIcon
 						icon={faHeart}
 						size="xl"
-						style={{ color: "#c4501b" }}
-						// className="p-5 hover:border-red-600 hover:bg-red-400/50 transition-all ease-in-out duration-500"
+						style={{ color: "#c4501b" }} //if i comment this line the hover effect works fine
+						// className="hover:text-red-600 transition-colors ease-in-out duration-500"
+						className="cursor-pointer"
 						onClick={() => toggleFavorite(recipe)}
 					/>
 				)}
